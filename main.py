@@ -142,6 +142,9 @@ def generate_nfts() -> None:
         fname2 = Path(f'./trait-layers/circles/{circle_files[item["Circle"]]}.png').absolute()
         fname3 = Path(f'./trait-layers/squares/{square_files[item["Square"]]}.png').absolute()
         print(fname1, Path().absolute())
+        with open(fname1, 'wb') as f:
+            pass
+        f.close()
         im1 = Image.open(fname1).convert('RGBA')
         im2 = Image.open(fname2).convert('RGBA')
         im3 = Image.open(fname3).convert('RGBA')
