@@ -4,6 +4,9 @@ import random
 import json
 from pathlib import Path
 
+def download():
+    dfile  = 'https://github.com/usetech-llc/substrapunks/archive/refs/heads/master.zip'
+
 def mkdirp(directory):
     if not os.path.isdir(directory):
         os.makedirs(directory)
